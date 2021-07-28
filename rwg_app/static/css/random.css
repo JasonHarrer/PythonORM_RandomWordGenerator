@@ -1,0 +1,43 @@
+* {
+    border:  0;
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+#div-content {
+    margin: 25px 35%;
+    padding: 20px 80px;
+    background-color: aquamarine;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 5px;
+}
+
+h1 {
+    font-family: monospace;
+    font-style:  bold;
+    border:      solid 1px blue;
+    margin:      20px; 
+    padding:     1rem;
+}
+
+#div-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: white;
+    border: solid 1px darkgray;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+    margin: 10px auto;
+    width: 100px;
+}

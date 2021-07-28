@@ -1,0 +1,27 @@
+<!doctype HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This will create a random 14-character string">
+        <title>Random String Generator</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/random.css' %}"
+    </head>
+    <body>
+        <div id="div-content">
+            <h2>Random 14-Letter Word</h2>
+            {% if request.session.counter %}
+                <h3>Attempt #{{request.session.counter}}</h3>
+            {% endif %}
+            <h1>{{ request.session.random_word  }}</h1>
+            <div id="div-buttons">
+                <a href="/random_word">
+                    <button>Generate</button>
+                </a>
+                <a href="/reset">
+                    <button>Reset</button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
